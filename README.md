@@ -11,25 +11,25 @@ her name is sandbot and it goes by it/she pronouns and you can use it to:
 - and so much more :D
 
 # commands
-!tweet (text)
+## !tweet (text)
 - sends out a tweet. be nice
 - if rate limited adds to the queue (more on that later)
-!queue
+## !queue
 - shows the queue
-!startqueue
+## !startqueue
 - starts trying to send out tweets (every 15 minutes)
-!stopqueue
+## !stopqueue
 - stops the looping tast that !startqueue started
-!delqueue (restrict to admin)
+## !delqueue (restrict to admin)
 - clears the queue
-!markov
+## !markov
 - sends a whacky message constructed with markov strings
 - i don't know how these work but theres math that mashes words together
-!sand, !testrandom, !tr
+## !sand, !testrandom, !tr
 - sends out a random line from the random lines file
-!addtg (restrict to admin)
+## !addtg (restrict to admin)
 - adds a text trigger and what it should respond with
-!tglist
+## !tglist
 - shows the entire trigger list
 
 # ⚠️ SANDBOT IS PART OF THE WOKE MOB AND IS VERY QUEER ⚠️
