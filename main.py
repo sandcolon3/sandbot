@@ -33,8 +33,8 @@ bot = commands.Bot(command_prefix='!', description=description, intents=intents)
 ## TWITTER STUFF
 
 client = tweepy.Client(
-    consumer_key=consumer_key, consumer_secret=consumer_secret,
-    access_token=access_token, access_token_secret=access_token_secret
+    consumer_key=os.getenv('consumer_key'), consumer_secret=os.getenv('consumer_secret'),
+    access_token=os.getenv('access_token'), access_token_secret=os.getenv('access_token_secret')
 )
 
 ## COMMANDS RELATED STUFF
@@ -296,4 +296,4 @@ async def addtg(ctx, trigger_text):
 async def tglist(ctx):
     await ctx.send(triggers_responses)
 
-bot.run(TOKEN)
+bot.run(os.getenv('TOKEN'))
