@@ -25,7 +25,7 @@ her name is sandbot and it goes by it/she pronouns and you can use it to:
 ## !markov
 - sends a whacky message constructed with markov strings
 - i don't know how these work but theres math that mashes words together
-## !sand, !testrandom, !tr
+## !sand
 - sends out a random line from the random lines file
 ## !addtg (restrict to admin)
 - adds a text trigger and what it should respond with
