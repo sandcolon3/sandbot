@@ -224,7 +224,7 @@ async def delqueue(ctx):
     await ctx.send("queue has been cleared high one")
 
 @bot.command()
-async def testrandom(ctx):
+async def sand(ctx):
     random_line = random.choice(randomlines)
     formatted_line = random_line.replace('\\n', '\n')  # this replaces \n, which it takes as a literal, to an actual salto de linea
     await ctx.send(formatted_line)
