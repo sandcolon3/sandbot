@@ -270,7 +270,7 @@ async def on_message(message):
     await bot.process_commands(message)
 
 @bot.command()
-@commands.has_role(1307399056904945684)
+@commands.has_role(1363277372069249034)
 async def addtg(ctx, trigger_text):
     
     await ctx.send(f"please provide a response for the trigger '{trigger_text}':")
