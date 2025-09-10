@@ -112,29 +112,6 @@ async def on_ready():
 async def test(ctx):
     await ctx.send("fuck you")
 
-# TODO: make all of this useless and just build it all into !help
-@bot.command()
-async def shelp(ctx):
-    await ctx.send("list of commands:\n!test - tests if the bot works\n!tweet - tweets something on the sandbot account\n!tweetpic - tweets a picture\n!queue - shows the tweet queue if the api limit has been hit\n!markov - generates a sand tweet mashing strings together (no ai)\n\nif ur an admin do !sadminhelp")
-
-## SINCLAIR IF UR READING THIS i know this is the dumbest idea ever i just idk 
-@bot.command()
-async def sadminhelp(ctx):
-    await ctx.send("please input the passwordsd // will come up with a better system later")
-
-    def check2(m):
-        return m.author == ctx.author and m.channel == ctx.channel
-    
-    try:
-        # Wait for a response from the user
-        response_message2 = await bot.wait_for('message', check=check2, timeout=30)  # 30 seconds timeout
-        response_text2 = response_message2.content
-        if response_text2 == "randyfromthe222":
-            await ctx.send("list of commands:\n!startqueue - starts the tweet queue\n!delqueue - clears the queue\n!addtg - adds a chat trigger and its response\n!tglist - shows the list of triggers and its responses")
-
-    except asyncio.TimeoutError:
-        await ctx.send("you took too long to send the password. you don't know it lol")
-
 @bot.command()
 async def tweet(ctx, *, tweet_content):
     author_id = ctx.author.id
